@@ -38,8 +38,9 @@ jobs:
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
-      with: java-app
-      path: '${{github.workspace}}/target/*.jar'
+      with:
+        name: java-app
+        path: '${{ github.workspace }}/target/*.jar'
 
   docker-job:
     runs-on: ubuntu-latest
