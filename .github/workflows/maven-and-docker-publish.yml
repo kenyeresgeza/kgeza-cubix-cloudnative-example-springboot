@@ -64,3 +64,4 @@ jobs:
 
       - name: Publish Docker image
         run: docker push ghcr.io/kenyeresgeza/cubix/cloudnative/demo:actions
+  
