@@ -37,7 +37,7 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
 
     - name: Upload artifact
-      use: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with: java-app
       path: '${{github.workspace}}/target/*.jar'
 
